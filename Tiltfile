@@ -5,7 +5,7 @@ NAMESPACE = os.getenv("NAMESPACE", default='default')
 k8s_custom_deploy(
     'spring-sensors',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --live-update" +
-               " --label apps.tanzu.vmware.com/workload-type=web-dev" +
+               " --label apps.tanzu.vmware.com/workload-type=web" +
                " --local-path " + LOCAL_PATH +
                " --source-image " + SOURCE_IMAGE +
                " --namespace " + NAMESPACE +
