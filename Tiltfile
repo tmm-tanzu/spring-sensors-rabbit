@@ -21,7 +21,7 @@ k8s_custom_deploy(
 
 k8s_resource('spring-sensors', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'spring-sensors'}])
-allow_k8s_contexts('gke_taaron-1_us-west1-b_tap-ga1')
+allow_k8s_contexts('tap-dev-demo')
 
 
 
